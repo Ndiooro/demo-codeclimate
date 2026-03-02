@@ -1,0 +1,91 @@
+/** * CE CODE EST VOLONTAIREMENT MAUVAIS POUR LA DÉMO 
+ * Défauts : Complexité, Duplication, Longueur, Mauvaise nomenclature
+ */
+
+function processeur_de_donnees_complexe_et_long(a, b, c, d, e, f, g, h, i) {
+    // SÉRIE DE IF IMBRIQUÉS (Explose la complexité cognitive)
+    if (a != null) {
+        console.log("Etape 1");
+        if (b > 10) {
+            console.log("Etape 2");
+            if (c === "admin") {
+                if (d === true) {
+                    if (e.length > 0) {
+                        for (let j = 0; j < e.length; j++) {
+                            if (e[j].status === "active") {
+                                if (f === "Dakar") {
+                                    if (g < 100) {
+                                        return "Autorisé - Niveau 1";
+                                    } else { return "Refusé - Trop cher"; }
+                                } else { return "Refusé - Hors zone"; }
+                            }
+                        }
+                    }
+                } else { return "Compte désactivé"; }
+            } else { return "Accès restreint"; }
+        } else { return "Valeur B insuffisante"; }
+    }
+
+    // DUPLICATION : On recopie exactement la même logique 
+    // Cela va déclencher l'alerte "Identical code block"
+    let resultat_temporaire = 0;
+    if (a != null) {
+        if (b > 10) {
+            if (c === "admin") {
+                if (d === true) {
+                    if (e.length > 0) {
+                        for (let k = 0; k < e.length; k++) {
+                            if (e[k].status === "active") {
+                                resultat_temporaire = 100;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // FONCTION INTERMINABLE (Trop de lignes de code)
+    console.log("Log inutile 1");
+    console.log("Log inutile 2");
+    console.log("Log inutile 3");
+    console.log("Log inutile 4");
+    console.log("Log inutile 5");
+    console.log("Log inutile 6");
+    console.log("Log inutile 7");
+    console.log("Log inutile 8");
+    console.log("Log inutile 9");
+    console.log("Log inutile 10");
+    console.log("Log inutile 11");
+    console.log("Log inutile 12");
+    console.log("Log inutile 13");
+    console.log("Log inutile 14");
+    console.log("Log inutile 15");
+    
+    return "Fin du traitement";
+}
+
+// DEUXIÈME FONCTION : COPIER-COLLER DE LA PREMIÈRE
+// Pour garantir que Qlty détecte la duplication entre fichiers/fonctions
+function processeur_de_donnees_copie(a, b, c, d, e, f, g, h, i) {
+    if (a != null) {
+        if (b > 10) {
+            if (c === "admin") {
+                if (d === true) {
+                    if (e.length > 0) {
+                        for (let j = 0; j < e.length; j++) {
+                            if (e[j].status === "active") {
+                                if (f === "Dakar") {
+                                    if (g < 100) {
+                                        return "Autorisé";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return "Erreur";
+}
